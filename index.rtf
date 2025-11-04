@@ -1,0 +1,747 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2759
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red109\green109\blue109;\red236\green241\blue247;\red251\green0\blue7;
+\red0\green0\blue0;\red42\green42\blue42;\red107\green0\blue1;\red0\green0\blue255;\red77\green80\blue85;
+\red9\green60\blue148;\red24\green112\blue43;\red19\green118\blue70;\red111\green14\blue195;\red164\green69\blue11;
+}
+{\*\expandedcolortbl;;\cssrgb\c50196\c50196\c50196;\cssrgb\c94118\c95686\c97647;\cssrgb\c100000\c0\c0;
+\cssrgb\c0\c0\c0;\cssrgb\c21961\c21961\c21961;\cssrgb\c50196\c0\c0;\cssrgb\c0\c0\c100000;\cssrgb\c37255\c38824\c40784;
+\cssrgb\c1569\c31765\c64706;\cssrgb\c9412\c50196\c21961;\cssrgb\c3529\c52549\c34510;\cssrgb\c51765\c18824\c80784;\cssrgb\c70980\c34902\c3137;
+}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 <!DOCTYPE\cf4 \strokec4  html\cf2 \strokec2 >\cf0 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 <\cf7 \strokec7 html\cf0 \strokec5  \cf4 \strokec4 lang\cf6 \strokec6 =\cf8 \strokec8 "en"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 <\cf7 \strokec7 head\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3     \cf6 \strokec6 <\cf7 \strokec7 meta\cf0 \strokec5  \cf4 \strokec4 charset\cf6 \strokec6 =\cf8 \strokec8 "UTF-8"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 meta\cf0 \strokec5  \cf4 \strokec4 name\cf6 \strokec6 =\cf8 \strokec8 "viewport"\cf0 \strokec5  \cf4 \strokec4 content\cf6 \strokec6 =\cf8 \strokec8 "width=device-width, initial-scale=1.0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 title\cf6 \strokec6 >\cf0 \strokec5 Cousins Clean Co. | Happy Holidays\cf6 \strokec6 </\cf7 \strokec7 title\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cb1 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 script\cf0 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf8 \strokec8 "https://cdn.tailwindcss.com"\cf6 \strokec6 ></\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 style\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 /* Custom styles for smooth scrolling and clean font */\cf0 \cb1 \strokec5 \
+\cb3         \cf7 \strokec7 html\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 scroll-behavior:\cf0 \strokec5  \cf10 \strokec10 smooth\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf7 \strokec7 body\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 font-family:\cf0 \strokec5  \cf11 \strokec11 'Inter'\cf0 \strokec5 , \cf10 \strokec10 sans-serif\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 background-color:\cf0 \strokec5  \cf10 \strokec10 #f7f9fb\cf0 \strokec5 ; \cf9 \strokec9 /* Light background for the whole page */\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 color:\cf0 \strokec5  \cf10 \strokec10 #1f2937\cf0 \strokec5 ; \cf9 \strokec9 /* Dark text */\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 overflow-x:\cf0 \strokec5  \cf10 \strokec10 hidden\cf0 \strokec5 ; \cf9 \strokec9 /* Prevent horizontal scrollbar from snow */\cf0 \cb1 \strokec5 \
+\cb3         \}\cb1 \
+\cb3         \cb1 \
+\cb3         \cf9 \strokec9 /* --- SNOW ON LETTERS EFFECT (simulated using text-shadow) --- */\cf0 \cb1 \strokec5 \
+\cb3         \cf7 \strokec7 .snowy-text\cf0 \strokec5  \{\cb1 \
+\cb3             \cf9 \strokec9 /* Base text color is white/light gray */\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 color:\cf0 \strokec5  \cf10 \strokec10 #f1f5f9\cf0 \strokec5 ; \cb1 \
+\cb3             \cf4 \strokec4 text-shadow:\cf0 \strokec5  \cb1 \
+\cb3                 \cf9 \strokec9 /* Top Snow (creates thickness) */\cf0 \cb1 \strokec5 \
+\cb3                 \cf12 \strokec12 -2px\cf0 \strokec5  \cf12 \strokec12 -2px\cf0 \strokec5  \cf12 \strokec12 0px\cf0 \strokec5  \cf10 \strokec10 rgba(\cf12 \strokec12 255\cf0 \strokec5 , \cf12 \strokec12 255\cf0 \strokec5 , \cf12 \strokec12 255\cf0 \strokec5 , \cf12 \strokec12 0.6\cf10 \strokec10 )\cf0 \strokec5 ,\cb1 \
+\cb3                 \cf12 \strokec12 -1px\cf0 \strokec5  \cf12 \strokec12 -1px\cf0 \strokec5  \cf12 \strokec12 0px\cf0 \strokec5  \cf10 \strokec10 rgba(\cf12 \strokec12 255\cf0 \strokec5 , \cf12 \strokec12 255\cf0 \strokec5 , \cf12 \strokec12 255\cf0 \strokec5 , \cf12 \strokec12 0.8\cf10 \strokec10 )\cf0 \strokec5 ,\cb1 \
+\cb3                 \cb1 \
+\cb3                 \cf9 \strokec9 /* Main White Shadow (Glow/Frost) */\cf0 \cb1 \strokec5 \
+\cb3                 \cf12 \strokec12 0\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5  \cf12 \strokec12 10px\cf0 \strokec5  \cf10 \strokec10 rgba(\cf12 \strokec12 255\cf0 \strokec5 , \cf12 \strokec12 255\cf0 \strokec5 , \cf12 \strokec12 255\cf0 \strokec5 , \cf12 \strokec12 0.7\cf10 \strokec10 )\cf0 \strokec5 ,\cb1 \
+\cb3                 \cf12 \strokec12 0\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5  \cf12 \strokec12 20px\cf0 \strokec5  \cf10 \strokec10 rgba(\cf12 \strokec12 255\cf0 \strokec5 , \cf12 \strokec12 255\cf0 \strokec5 , \cf12 \strokec12 255\cf0 \strokec5 , \cf12 \strokec12 0.4\cf10 \strokec10 )\cf0 \strokec5 ,\cb1 \
+\cb3                 \cb1 \
+\cb3                 \cf9 \strokec9 /* Dark Shadow beneath (adds definition to the snow) */\cf0 \cb1 \strokec5 \
+\cb3                 \cf12 \strokec12 4px\cf0 \strokec5  \cf12 \strokec12 4px\cf0 \strokec5  \cf12 \strokec12 6px\cf0 \strokec5  \cf10 \strokec10 rgba(\cf12 \strokec12 0\cf0 \strokec5 , \cf12 \strokec12 0\cf0 \strokec5 , \cf12 \strokec12 0\cf0 \strokec5 , \cf12 \strokec12 0.3\cf10 \strokec10 )\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 transition:\cf0 \strokec5  \cf10 \strokec10 all\cf0 \strokec5  \cf12 \strokec12 0.3s\cf0 \strokec5  \cf10 \strokec10 ease\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf9 \strokec9 /* --- SNOWFALL ANIMATION --- */\cf0 \cb1 \strokec5 \
+\cb3         \cb1 \
+\cb3         \cf9 \strokec9 /* Keyframe for falling motion */\cf0 \cb1 \strokec5 \
+\cb3         \cf13 \strokec13 @keyframes\cf0 \strokec5  \cf10 \strokec10 snowfall\cf0 \strokec5  \{\cb1 \
+\cb3             \cf12 \strokec12 0%\cf0 \strokec5  \{ \cf4 \strokec4 transform:\cf0 \strokec5  \cf10 \strokec10 translateY(\cf12 \strokec12 -100vh\cf10 \strokec10 )\cf0 \strokec5 ; \cf4 \strokec4 opacity:\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5 ; \}\cb1 \
+\cb3             \cf12 \strokec12 5%\cf0 \strokec5  \{ \cf4 \strokec4 opacity:\cf0 \strokec5  \cf12 \strokec12 1\cf0 \strokec5 ; \}\cb1 \
+\cb3             \cf12 \strokec12 95%\cf0 \strokec5  \{ \cf4 \strokec4 opacity:\cf0 \strokec5  \cf12 \strokec12 1\cf0 \strokec5 ; \}\cb1 \
+\cb3             \cf12 \strokec12 100%\cf0 \strokec5  \{ \cf4 \strokec4 transform:\cf0 \strokec5  \cf10 \strokec10 translateY(\cf12 \strokec12 100vh\cf10 \strokec10 )\cf0 \strokec5 ; \cf4 \strokec4 opacity:\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5 ; \}\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf9 \strokec9 /* Base class for a single snowflake */\cf0 \cb1 \strokec5 \
+\cb3         \cf7 \strokec7 .snowflake\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 position:\cf0 \strokec5  \cf10 \strokec10 absolute\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 width:\cf0 \strokec5  \cf12 \strokec12 5px\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 height:\cf0 \strokec5  \cf12 \strokec12 5px\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 background:\cf0 \strokec5  \cf10 \strokec10 #FFFFFF\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 border-radius:\cf0 \strokec5  \cf12 \strokec12 50%\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 pointer-events:\cf0 \strokec5  \cf10 \strokec10 none\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 opacity:\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 animation-name:\cf0 \strokec5  \cf10 \strokec10 snowfall\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 animation-timing-function:\cf0 \strokec5  \cf10 \strokec10 linear\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 animation-iteration-count:\cf0 \strokec5  \cf10 \strokec10 infinite\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 z-index:\cf0 \strokec5  \cf12 \strokec12 10\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cb1 \
+\cb3         \cf9 \strokec9 /* Generate multiple snow layers with different speeds/delays */\cf0 \cb1 \strokec5 \
+\cb3         \cf7 \strokec7 .snowfall-layer-1\cf0 \strokec5  \cf7 \strokec7 .snowflake\cf0 \strokec5  \{ \cf4 \strokec4 animation-duration:\cf0 \strokec5  \cf12 \strokec12 15s\cf0 \strokec5 ; \}\cb1 \
+\cb3         \cf7 \strokec7 .snowfall-layer-2\cf0 \strokec5  \cf7 \strokec7 .snowflake\cf0 \strokec5  \{ \cf4 \strokec4 animation-duration:\cf0 \strokec5  \cf12 \strokec12 25s\cf0 \strokec5 ; \cf4 \strokec4 opacity:\cf0 \strokec5  \cf12 \strokec12 0.8\cf0 \strokec5 ; \cf4 \strokec4 width:\cf0 \strokec5  \cf12 \strokec12 3px\cf0 \strokec5 ; \cf4 \strokec4 height:\cf0 \strokec5  \cf12 \strokec12 3px\cf0 \strokec5 ; \}\cb1 \
+\cb3         \cf7 \strokec7 .snowfall-layer-3\cf0 \strokec5  \cf7 \strokec7 .snowflake\cf0 \strokec5  \{ \cf4 \strokec4 animation-duration:\cf0 \strokec5  \cf12 \strokec12 35s\cf0 \strokec5 ; \cf4 \strokec4 opacity:\cf0 \strokec5  \cf12 \strokec12 0.5\cf0 \strokec5 ; \cf4 \strokec4 width:\cf0 \strokec5  \cf12 \strokec12 2px\cf0 \strokec5 ; \cf4 \strokec4 height:\cf0 \strokec5  \cf12 \strokec12 2px\cf0 \strokec5 ; \}\cb1 \
+\
+\cb3         \cf9 \strokec9 /* Random initial positions and delays */\cf0 \cb1 \strokec5 \
+\cb3         \cf7 \strokec7 .snowflake:nth-child\cf0 \strokec5 (3\cf7 \strokec7 n\cf0 \strokec5  + 1) \{ \cf4 \strokec4 left:\cf0 \strokec5  \cf12 \strokec12 10%\cf0 \strokec5 ; \cf4 \strokec4 animation-delay:\cf0 \strokec5  \cf12 \strokec12 2s\cf0 \strokec5 ; \}\cb1 \
+\cb3         \cf7 \strokec7 .snowflake:nth-child\cf0 \strokec5 (3\cf7 \strokec7 n\cf0 \strokec5  + 2) \{ \cf4 \strokec4 left:\cf0 \strokec5  \cf12 \strokec12 40%\cf0 \strokec5 ; \cf4 \strokec4 animation-delay:\cf0 \strokec5  \cf12 \strokec12 10s\cf0 \strokec5 ; \}\cb1 \
+\cb3         \cf7 \strokec7 .snowflake:nth-child\cf0 \strokec5 (3\cf7 \strokec7 n\cf0 \strokec5  + 3) \{ \cf4 \strokec4 left:\cf0 \strokec5  \cf12 \strokec12 70%\cf0 \strokec5 ; \cf4 \strokec4 animation-delay:\cf0 \strokec5  \cf12 \strokec12 5s\cf0 \strokec5 ; \}\cb1 \
+\cb3         \cf7 \strokec7 .snowflake:nth-child\cf0 \strokec5 (5\cf7 \strokec7 n\cf0 \strokec5 ) \{ \cf4 \strokec4 left:\cf0 \strokec5  \cf12 \strokec12 25%\cf0 \strokec5 ; \cf4 \strokec4 animation-delay:\cf0 \strokec5  \cf12 \strokec12 7s\cf0 \strokec5 ; \}\cb1 \
+\cb3         \cf7 \strokec7 .snowflake:nth-child\cf0 \strokec5 (7\cf7 \strokec7 n\cf0 \strokec5 ) \{ \cf4 \strokec4 left:\cf0 \strokec5  \cf12 \strokec12 55%\cf0 \strokec5 ; \cf4 \strokec4 animation-delay:\cf0 \strokec5  \cf12 \strokec12 1s\cf0 \strokec5 ; \}\cb1 \
+\cb3         \cf7 \strokec7 .snowflake:nth-child\cf0 \strokec5 (11\cf7 \strokec7 n\cf0 \strokec5 ) \{ \cf4 \strokec4 left:\cf0 \strokec5  \cf12 \strokec12 85%\cf0 \strokec5 ; \cf4 \strokec4 animation-delay:\cf0 \strokec5  \cf12 \strokec12 14s\cf0 \strokec5 ; \}\cb1 \
+\cb3         \cb1 \
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 style\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         tailwind.config = \{\cb1 \
+\cb3             theme: \{\cb1 \
+\cb3                 extend: \{\cb1 \
+\cb3                     colors: \{\cb1 \
+\cb3                         \cf9 \strokec9 // Customizing colors for a professional Christmas theme\cf0 \cb1 \strokec5 \
+\cb3                         \cf11 \strokec11 'accent-green'\cf0 \strokec5 : \cf11 \strokec11 '#15803d'\cf0 \strokec5 , \cf9 \strokec9 // Deep Forest Green (used for service cards)\cf0 \cb1 \strokec5 \
+\cb3                         \cf11 \strokec11 'accent-red'\cf0 \strokec5 : \cf11 \strokec11 '#dc2626'\cf0 \strokec5 ,   \cf9 \strokec9 // Bright Christmas Red (used for CTAs, banners)\cf0 \cb1 \strokec5 \
+\cb3                         \cf11 \strokec11 'dark-text'\cf0 \strokec5 : \cf11 \strokec11 '#111827'\cf0 \strokec5 ,\cb1 \
+\cb3                         \cf11 \strokec11 'winter-blue'\cf0 \strokec5 : \cf11 \strokec11 '#1e3a8a'\cf0 \strokec5 ,  \cf9 \strokec9 // Dark Blue for Power Wash\cf0 \cb1 \strokec5 \
+\cb3                     \}\cb1 \
+\cb3                 \}\cb1 \
+\cb3             \}\cb1 \
+\cb3         \}\cb1 \
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 </\cf7 \strokec7 head\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 <\cf7 \strokec7 body\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "antialiased"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3     \cf9 \strokec9 <!-- SNOWFALL OVERLAY (Applied to Hero section specifically) -->\cf0 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 <!-- The snow container needs to be relative to the viewport/document but positioned over the hero -->\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "fixed inset-0 pointer-events-none z-40 overflow-hidden"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "top: 0; height: 60vh;"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "absolute inset-0 snowfall-layer-1"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 <!-- 30 large, fast snowflakes -->\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 10%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 20%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 30%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 40%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 50%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 60%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 70%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 80%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 90%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 15%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 25%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 35%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 45%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 55%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 65%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 75%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 85%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 95%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 5%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 12%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 22%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 32%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 42%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 52%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 62%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 72%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 82%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 92%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "absolute inset-0 snowfall-layer-2"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 <!-- 30 medium, slower snowflakes -->\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 13%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 23%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 33%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 43%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 53%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 63%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 73%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 83%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 93%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 18%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 28%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 38%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 48%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 58%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 68%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 78%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 88%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 98%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 8%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 19%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 29%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 39%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 49%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 59%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 69%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 79%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 89%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 99%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "absolute inset-0 snowfall-layer-3"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 <!-- 30 small, slowest snowflakes -->\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 16%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 26%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 36%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 46%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 56%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 66%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 76%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 86%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 96%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 11%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 21%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 31%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 41%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 51%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 61%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 71%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 81%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 91%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 6%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 17%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 27%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 37%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 47%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 57%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 67%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 77%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 87%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 ><\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "snowflake"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "left: 97%;"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\
+\cb3     \cf9 \strokec9 <!-- Seasonal Alert Bar (CHRISTMAS THEME) -->\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "bg-accent-red py-3"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-sm font-semibold text-white"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "inline-block mr-2 align-middle"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf9 \strokec9 <!-- Star icon -->\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-5 h-5 text-yellow-300"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 20 20"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.817 2.05a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.817-2.05a1 1 0 00-1.175 0l-2.817 2.05c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"\cf6 \strokec6 ></\cf7 \strokec7 path\cf6 \strokec6 ></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 HAPPY HOLIDAYS! Book a **Winter Guard** combo today and receive an extra 10% off. \cf6 \strokec6 <\cf7 \strokec7 a\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "#combos"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "underline font-bold hover:text-red-100"\cf6 \strokec6 >\cf0 \strokec5 See Our Holiday Deals \uc0\u8594 \cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3     \cf9 \strokec9 <!-- Navigation Bar -->\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 header\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "sticky top-0 z-50 bg-white shadow-lg"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex justify-between items-center py-4"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cb1 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex justify-start"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 a\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "#"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-2xl font-bold text-accent-green hover:text-accent-red transition duration-150"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         Cousins Clean Co.\cb1 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                 \cf9 \strokec9 <!-- Desktop CTA -->\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 a\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "#contact"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "inline-flex items-center px-6 py-2 border border-transparent text-base font-medium rounded-xl shadow-lg text-white bg-accent-red hover:bg-red-700 transition duration-150"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         Get Your Holiday Quote\cb1 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                 \cf9 \strokec9 <!-- Mobile Menu Button -->\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "md:hidden"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "mobile-menu-button"\cf0 \strokec5  \cf4 \strokec4 type\cf6 \strokec6 =\cf8 \strokec8 "button"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent-green"\cf0 \strokec5  \cf4 \strokec4 aria-expanded\cf6 \strokec6 =\cf8 \strokec8 "false"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "sr-only"\cf6 \strokec6 >\cf0 \strokec5 Open main menu\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "h-6 w-6"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf0 \strokec5  \cf4 \strokec4 aria-hidden\cf6 \strokec6 =\cf8 \strokec8 "true"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M4 6h16M4 12h16M4 18h16"\cf0 \strokec5  \cf6 \strokec6 />\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3         \cf9 \strokec9 <!-- Mobile Menu (Collapsed by default) -->\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "mobile-menu"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "hidden md:hidden absolute w-full bg-white shadow-xl py-2"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 a\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "#services"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "block px-4 py-2 text-base font-medium text-gray-700 hover:bg-red-50"\cf6 \strokec6 >\cf0 \strokec5 Services\cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 a\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "#combos"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "block px-4 py-2 text-base font-medium text-gray-700 hover:bg-red-50"\cf6 \strokec6 >\cf0 \strokec5 Combos\cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 a\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "#about"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "block px-4 py-2 text-base font-medium text-gray-700 hover:bg-red-50"\cf6 \strokec6 >\cf0 \strokec5 Our Story\cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 a\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "#contact"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "block px-4 py-2 text-base font-medium text-gray-700 hover:bg-red-50"\cf6 \strokec6 >\cf0 \strokec5 Get Quote\cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 header\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 main\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 <!-- Hero Section - Deep Charcoal Gray background with Snowy Text Effect -->\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 section\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "relative bg-gray-900 overflow-hidden py-20 lg:py-32 border-b border-gray-700"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-30"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cb1 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-base text-accent-red font-semibold tracking-wide uppercase sm:text-lg"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     MAKING HOMES BRIGHTER FOR THE HOLIDAYS\cb1 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cb1 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 h1\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-4 text-5xl tracking-tight font-extrabold sm:text-6xl md:text-7xl lg:text-8xl leading-tight"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "block snowy-text"\cf6 \strokec6 >\cf0 \strokec5 Reliable Snow Removal,\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf9 \strokec9 <!-- CHANGE HERE: text-yellow-300 changed to text-accent-green -->\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "block snowy-text"\cf6 \strokec6 >\cf0 \strokec5 Power Washing, & \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-accent-green"\cf6 \strokec6 >\cf0 \strokec5 Winter Prep\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 ></\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 h1\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cb1 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-8 text-lg text-gray-300 sm:mt-10 sm:text-xl sm:max-w-3xl sm:mx-auto"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     Family-run, local, and focused on delivering the best results without emptying your wallet. \cb1 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 strong\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "font-extrabold text-white"\cf6 \strokec6 >\cf0 \strokec5 **Your budget-friendly, trusted winter crew.**\cf6 \strokec6 </\cf7 \strokec7 strong\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cb1 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-12"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 a\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "#combos"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "inline-block px-8 py-4 border-none text-lg font-semibold rounded-2xl text-accent-green bg-white shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-0.5"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         View Festive Combo Deals \uc0\u8594 \cb1 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 section\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3         \cf9 \strokec9 <!-- Services Breakdown Section -->\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 section\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "services"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "py-16 sm:py-24 bg-white"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "lg:text-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 h2\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-base text-accent-green font-semibold tracking-wide uppercase"\cf6 \strokec6 >\cf0 \strokec5 Holiday Services\cf6 \strokec6 </\cf7 \strokec7 h2\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         Your Home, Ready for Guests and Snow\cb1 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         We offer specialized services to get your property sparkling clean and winter-ready.\cb1 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-10"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cb1 \
+\cb3                         \cf9 \strokec9 <!-- Snow Removal Card -->\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "relative bg-red-100 p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-2 border-accent-red"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-start"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex-shrink-0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "h-12 w-12 flex items-center justify-center rounded-full bg-accent-red text-white"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                         \cf9 \strokec9 <!-- Snow Shovel Icon -->\cf0 \cb1 \strokec5 \
+\cb3                                         \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "h-6 w-6"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                             \cf6 \strokec6 <\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"\cf0 \strokec5  \cf6 \strokec6 />\cf0 \cb1 \strokec5 \
+\cb3                                         \cf6 \strokec6 </\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "ml-4"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-lg leading-6 font-medium text-gray-900"\cf6 \strokec6 >\cf0 \strokec5 Seasonal Snow Removal (SR)\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-2 text-base text-gray-500"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                         Get your driveways and walkways cleared quickly and affordably this winter.\cb1 \
+\cb3                                     \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 ul\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-3 text-sm text-gray-600 space-y-1 list-disc list-inside"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                         \cf6 \strokec6 <\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \strokec5 Snow Shoveling (Driveway/Walkway) (SR-S)\cf6 \strokec6 </\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                         \cf6 \strokec6 <\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \strokec5 Ice Melt/Salting Application (SR-I)\cf6 \strokec6 </\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 </\cf7 \strokec7 ul\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                         \cf9 \strokec9 <!-- Power Washing Card -->\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "relative bg-winter-blue/10 p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-2 border-winter-blue"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-start"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex-shrink-0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "h-12 w-12 flex items-center justify-center rounded-full bg-winter-blue text-white"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                         \cf9 \strokec9 <!-- Water Spray Icon -->\cf0 \cb1 \strokec5 \
+\cb3                                         \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "h-6 w-6"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                             \cf6 \strokec6 <\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M8 9l1.5-1.5"\cf0 \strokec5  \cf6 \strokec6 />\cf0 \cb1 \strokec5 \
+\cb3                                         \cf6 \strokec6 </\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "ml-4"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-lg leading-6 font-medium text-gray-900"\cf6 \strokec6 >\cf0 \strokec5 Power Washing Services (PW)\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-2 text-base text-gray-500"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                         We clean exterior hard surfaces like driveways, patios, and walkways, removing years of dirt and grime.\cb1 \
+\cb3                                     \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 ul\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-3 text-sm text-gray-600 space-y-1 list-disc list-inside"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                         \cf6 \strokec6 <\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \strokec5 Power Wash Driveway (PW-D)\cf6 \strokec6 </\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                         \cf6 \strokec6 <\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \strokec5 Power Wash Patio (PW-P)\cf6 \strokec6 </\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                         \cf6 \strokec6 <\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \strokec5 Power Wash Walkway (PW-W)\cf6 \strokec6 </\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 </\cf7 \strokec7 ul\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                         \cf9 \strokec9 <!-- Yard & Exterior Cleaning Card -->\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "relative bg-green-100 p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-2 border-accent-green"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-start"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex-shrink-0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "h-12 w-12 flex items-center justify-center rounded-full bg-accent-green text-white"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                         \cf9 \strokec9 <!-- Checkmark Icon -->\cf0 \cb1 \strokec5 \
+\cb3                                         \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "h-6 w-6"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                             \cf6 \strokec6 <\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M9 12l2 2 4-4m5.618-4.276a2.004 2.004 0 010 2.83l-11 11a2.004 2.004 0 01-2.83 0l-11-11a2.004 2.004 0 010-2.83l.88-.88C6.918 3.52 7.42 3.25 8 3.25h8c.58 0 1.082.27 1.427.764l.88.88z"\cf0 \strokec5  \cf6 \strokec6 />\cf0 \cb1 \strokec5 \
+\cb3                                         \cf6 \strokec6 </\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "ml-4"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-lg leading-6 font-medium text-gray-900"\cf6 \strokec6 >\cf0 \strokec5 One-Time Yard & Exterior Cleaning (LS)\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-2 text-base text-gray-500"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                         Specialized soft washing for delicate surfaces and comprehensive seasonal yard cleanups.\cb1 \
+\cb3                                     \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 ul\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-3 text-sm text-gray-600 space-y-1 list-disc list-inside"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                         \cf6 \strokec6 <\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \strokec5 Lawn Mowing (One-Time) (LS-M)\cf6 \strokec6 </\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                         \cf6 \strokec6 <\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \strokec5 Leaf/Yard Cleanup (One-Time) (LS-C)\cf6 \strokec6 </\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                         \cf6 \strokec6 <\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \strokec5 Brick Siding Soft Wash (LS-B)\cf6 \strokec6 </\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 </\cf7 \strokec7 ul\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cb1 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-16 text-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 a\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "#single-services"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "inline-block px-8 py-4 border-none text-lg font-semibold rounded-2xl text-white bg-accent-green shadow-xl hover:bg-emerald-700 transition duration-300 transform hover:-translate-y-0.5"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         View Single Service Prices\cb1 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 section\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3         \cf9 \strokec9 <!-- Single Service Pricing Section -->\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 section\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "single-services"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "py-16 sm:py-24 bg-gray-50 border-t border-gray-200"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "lg:text-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 h2\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-base text-accent-red font-semibold tracking-wide uppercase"\cf6 \strokec6 >\cf0 \strokec5 Individual Service Estimates\cf6 \strokec6 </\cf7 \strokec7 h2\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         A La Carte Pricing\cb1 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         Pick and choose exactly what you need with our simple, transparent price ranges.\cb1 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                 \cf9 \strokec9 <!-- Pricing Table -->\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-12 max-w-4xl mx-auto"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "bg-white rounded-xl shadow-lg divide-y divide-gray-100"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                         \cf9 \strokec9 <!-- Header Row -->\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "grid grid-cols-4 p-4 font-bold text-gray-700 bg-gray-100 rounded-t-xl"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "col-span-2"\cf6 \strokec6 >\cf0 \strokec5 Service Name\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-right"\cf6 \strokec6 >\cf0 \strokec5 Low End\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-right"\cf6 \strokec6 >\cf0 \strokec5 High End\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                         \cf9 \strokec9 <!-- Existing: Snow Shoveling (Themed Red) -->\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "grid grid-cols-4 p-4 hover:bg-red-50 transition duration-150"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "col-span-2 text-gray-800 font-medium font-extrabold text-accent-red"\cf6 \strokec6 >\cf0 \strokec5 Snow Shoveling (SR-S)\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-right text-accent-red font-semibold"\cf6 \strokec6 >\cf0 \strokec5 $35\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-right text-gray-600"\cf6 \strokec6 >\cf0 \strokec5 $70\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "col-span-4 text-sm text-gray-500 mt-1"\cf6 \strokec6 >\cf0 \strokec5 Notes: Driveway/Walkway shoveling for up to 6 inches of snow.\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cb1 \
+\cb3                         \cf9 \strokec9 <!-- Ice Melt/Salting Application (Themed Red) -->\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "grid grid-cols-4 p-4 hover:bg-red-50 transition duration-150"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "col-span-2 text-gray-800 font-medium font-extrabold text-accent-red"\cf6 \strokec6 >\cf0 \strokec5 Ice Melt/Salting Application (SR-I)\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-right text-accent-red font-semibold"\cf6 \strokec6 >\cf0 \strokec5 $25\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-right text-gray-600"\cf6 \strokec6 >\cf0 \strokec5 $50\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "col-span-4 text-sm text-gray-500 mt-1"\cf6 \strokec6 >\cf0 \strokec5 Notes: Application of ice melt to walkways and front steps.\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cb1 \
+\cb3                         \cf9 \strokec9 <!-- Brick Siding Soft Wash (Themed Green) -->\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "grid grid-cols-4 p-4 hover:bg-green-50 transition duration-150"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "col-span-2 text-gray-800 font-medium font-extrabold text-accent-green"\cf6 \strokec6 >\cf0 \strokec5 Brick Siding Soft Wash (LS-B)\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-right text-accent-green font-semibold"\cf6 \strokec6 >\cf0 \strokec5 $150\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-right text-gray-600"\cf6 \strokec6 >\cf0 \strokec5 $250\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "col-span-4 text-sm text-gray-500 mt-1"\cf6 \strokec6 >\cf0 \strokec5 Notes: Safe, low-pressure cleaning for exterior brick surfaces (up to 2 stories).\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cb1 \
+\cb3                         \cf9 \strokec9 <!-- Lawn Mowing (Themed Green) -->\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "grid grid-cols-4 p-4 hover:bg-green-50 transition duration-150"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "col-span-2 text-gray-800 font-medium font-extrabold text-accent-green"\cf6 \strokec6 >\cf0 \strokec5 Lawn Mowing (One-Time) (LS-M)\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-right text-accent-green font-semibold"\cf6 \strokec6 >\cf0 \strokec5 $40\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-right text-gray-600"\cf6 \strokec6 >\cf0 \strokec5 $60\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "col-span-4 text-sm text-gray-500 mt-1"\cf6 \strokec6 >\cf0 \strokec5 Notes: Single mow and trim service.\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                         \cf9 \strokec9 <!-- Leaf/Yard Cleanup (Themed Green) -->\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "grid grid-cols-4 p-4 hover:bg-green-50 transition duration-150"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "col-span-2 text-gray-800 font-medium text-accent-green"\cf6 \strokec6 >\cf0 \strokec5 Leaf/Yard Cleanup (One-Time) (LS-C)\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-right text-accent-green font-semibold"\cf6 \strokec6 >\cf0 \strokec5 $60\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-right text-gray-600"\cf6 \strokec6 >\cf0 \strokec5 $120\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "col-span-4 text-sm text-gray-500 mt-1"\cf6 \strokec6 >\cf0 \strokec5 Notes: Major Leaf Removal & Disposal\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\
+\cb3                         \cf9 \strokec9 <!-- Power Wash Driveway (Themed Blue) -->\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "grid grid-cols-4 p-4 hover:bg-blue-50 transition duration-150"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "col-span-2 text-gray-800 font-medium text-winter-blue"\cf6 \strokec6 >\cf0 \strokec5 Power Wash Driveway (PW-D)\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-right text-winter-blue font-semibold"\cf6 \strokec6 >\cf0 \strokec5 $75\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-right text-gray-600"\cf6 \strokec6 >\cf0 \strokec5 $120\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "col-span-4 text-sm text-gray-500 mt-1"\cf6 \strokec6 >\cf0 \strokec5 Notes: Standard 2-Car Driveway Size\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cb1 \
+\cb3                         \cf9 \strokec9 <!-- Power Wash Patio (Themed Blue) -->\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "grid grid-cols-4 p-4 hover:bg-blue-50 transition duration-150"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "col-span-2 text-gray-800 font-medium text-winter-blue"\cf6 \strokec6 >\cf0 \strokec5 Power Wash Patio (PW-P)\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-right text-winter-blue font-semibold"\cf6 \strokec6 >\cf0 \strokec5 $50\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-right text-gray-600"\cf6 \strokec6 >\cf0 \strokec5 $90\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "col-span-4 text-sm text-gray-500 mt-1"\cf6 \strokec6 >\cf0 \strokec5 Notes: Standard Patio Size\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                         \cf9 \strokec9 <!-- Power Wash Walkway (Themed Blue) -->\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "grid grid-cols-4 p-4 hover:bg-blue-50 transition duration-150 rounded-b-xl"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "col-span-2 text-gray-800 font-medium text-winter-blue"\cf6 \strokec6 >\cf0 \strokec5 Power Wash Walkway (PW-W)\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-right text-winter-blue font-semibold"\cf6 \strokec6 >\cf0 \strokec5 $40\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-right text-gray-600"\cf6 \strokec6 >\cf0 \strokec5 $80\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "col-span-4 text-sm text-gray-500 mt-1"\cf6 \strokec6 >\cf0 \strokec5 Notes: Single path/walkway cleaning.\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-12 text-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-sm text-gray-500"\cf6 \strokec6 >\cf0 \strokec5 *All prices are starting estimates. Final quote depends on size and job scope. \cf6 \strokec6 <\cf7 \strokec7 strong\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-gray-700"\cf6 \strokec6 >\cf0 \strokec5 Get a Free, Guaranteed Quote!\cf6 \strokec6 </\cf7 \strokec7 strong\cf6 \strokec6 ></\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 section\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3         \cf9 \strokec9 <!-- Combo Deals Section -->\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 section\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "combos"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "py-16 sm:py-24 bg-gray-100"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "lg:text-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 h2\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-base text-accent-red font-semibold tracking-wide uppercase"\cf6 \strokec6 >\cf0 \strokec5 Best Holiday Value\cf6 \strokec6 </\cf7 \strokec7 h2\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         Discounted Combo Deals\cb1 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         Bundle our services to maximize savings and prepare for the winter season.\cb1 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-16 grid grid-cols-1 gap-10 lg:grid-cols-3 lg:max-w-6xl lg:mx-auto"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cb1 \
+\cb3                     \cf9 \strokec9 <!-- Combo 4 (NEW): Winter Guard Combo (Accent Red Theme) -->\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex flex-col rounded-xl shadow-lg overflow-hidden bg-white hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border-4 border-accent-red transform scale-105 transition duration-500 z-10"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "px-6 py-8 sm:p-10 bg-red-100"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 h3\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xl leading-6 font-medium text-gray-900"\cf6 \strokec6 >\cf0 \strokec5 Winter Guard Combo\cf6 \strokec6 </\cf7 \strokec7 h3\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-2 text-sm text-accent-red font-semibold"\cf6 \strokec6 >\cf0 \strokec5 Ready for the First Snowfall!\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-4 flex items-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-5xl font-extrabold text-gray-900"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     $99\cb1 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "ml-1 text-xl font-medium text-gray-500"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     one-time*\cb1 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-white sm:p-10 sm:pt-6"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 ul\cf0 \strokec5  \cf4 \strokec4 role\cf6 \strokec6 =\cf8 \strokec8 "list"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "space-y-4"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 li\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-start"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex-shrink-0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                         \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "h-6 w-6 text-accent-red"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M5 13l4 4L19 7"\cf0 \strokec5  \cf6 \strokec6 /></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "ml-3 text-base text-gray-900 font-semibold"\cf6 \strokec6 >\cf0 \strokec5 Snow Shoveling (Driveway/Walkway)\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 li\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-start"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex-shrink-0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                         \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "h-6 w-6 text-accent-red"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M5 13l4 4L19 7"\cf0 \strokec5  \cf6 \strokec6 /></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "ml-3 text-base text-gray-900 font-semibold"\cf6 \strokec6 >\cf0 \strokec5 Leaf/Yard Cleanup (Pre-Winter Prep)\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 li\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-start"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex-shrink-0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                         \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "h-6 w-6 text-accent-red"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M5 13l4 4L19 7"\cf0 \strokec5  \cf6 \strokec6 /></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "ml-3 text-base text-gray-900 font-semibold"\cf6 \strokec6 >\cf0 \strokec5 Basic Driveway Power Wash (if requested and temp allows)\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 </\cf7 \strokec7 ul\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-6"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 a\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "#contact"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "block w-full text-center rounded-xl border border-transparent bg-accent-red px-6 py-3 text-lg font-medium text-white hover:bg-red-700"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     Select Winter Guard\cb1 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-3 text-xs text-gray-500 text-center"\cf6 \strokec6 >\cf0 \strokec5 *Starting price. Massive savings before snow hits!\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\
+\cb3                     \cf9 \strokec9 <!-- Combo 1: Green & Clean Deal (Accent Green Theme) -->\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex flex-col rounded-xl shadow-lg overflow-hidden bg-white hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border-2 border-accent-green"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "px-6 py-8 sm:p-10 bg-green-100"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 h3\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xl leading-6 font-medium text-gray-900"\cf6 \strokec6 >\cf0 \strokec5 Green & Clean Deal\cf6 \strokec6 </\cf7 \strokec7 h3\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-2 text-sm text-accent-green font-semibold"\cf6 \strokec6 >\cf0 \strokec5 The Essential Yard Care Combo\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-4 flex items-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-5xl font-extrabold text-gray-900"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     $89\cb1 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "ml-1 text-xl font-medium text-gray-500"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     one-time*\cb1 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-white sm:p-10 sm:pt-6"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 ul\cf0 \strokec5  \cf4 \strokec4 role\cf6 \strokec6 =\cf8 \strokec8 "list"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "space-y-4"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 li\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-start"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex-shrink-0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                         \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "h-6 w-6 text-accent-green"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M5 13l4 4L19 7"\cf0 \strokec5  \cf6 \strokec6 /></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "ml-3 text-base text-gray-900 font-semibold"\cf6 \strokec6 >\cf0 \strokec5 Lawn Mowing (One-Time)\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 li\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-start"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex-shrink-0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                         \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "h-6 w-6 text-accent-green"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M5 13l4 4L19 7"\cf0 \strokec5  \cf6 \strokec6 /></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "ml-3 text-base text-gray-900 font-semibold"\cf6 \strokec6 >\cf0 \strokec5 Leaf/Yard Cleanup (One-Time)\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 li\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-start"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex-shrink-0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                         \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "h-6 w-6 text-gray-400"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"\cf0 \strokec5  \cf6 \strokec6 /></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "ml-3 text-base text-gray-600 line-through"\cf6 \strokec6 >\cf0 \strokec5 Power Washing Services\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 </\cf7 \strokec7 ul\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-6"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 a\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "#contact"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "block w-full text-center rounded-xl border border-transparent bg-accent-green px-6 py-3 text-lg font-medium text-white hover:bg-emerald-700"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     Select Green & Clean\cb1 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-3 text-xs text-gray-500 text-center"\cf6 \strokec6 >\cf0 \strokec5 *Starting price. You save $11 off individual low price.\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                     \cf9 \strokec9 <!-- Combo 2: Sparkle Guard Special (Winter Blue Theme) -->\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex flex-col rounded-xl shadow-lg overflow-hidden bg-white hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border-2 border-winter-blue"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "px-6 py-8 sm:p-10 bg-blue-100"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 h3\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xl leading-6 font-medium text-gray-900"\cf6 \strokec6 >\cf0 \strokec5 Sparkle Guard Special\cf6 \strokec6 </\cf7 \strokec7 h3\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-2 text-sm text-winter-blue font-semibold"\cf6 \strokec6 >\cf0 \strokec5 Our Most Popular Hardscape Clean!\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-4 flex items-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-5xl font-extrabold text-gray-900"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     $139\cb1 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "ml-1 text-xl font-medium text-gray-500"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     one-time*\cb1 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-white sm:p-10 sm:pt-6"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 ul\cf0 \strokec5  \cf4 \strokec4 role\cf6 \strokec6 =\cf8 \strokec8 "list"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "space-y-4"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 li\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-start"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex-shrink-0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                         \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "h-6 w-6 text-winter-blue"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M5 13l4 4L19 7"\cf0 \strokec5  \cf6 \strokec6 /></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "ml-3 text-base text-gray-900 font-semibold"\cf6 \strokec6 >\cf0 \strokec5 Power Wash Driveway (PW-D)\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 li\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-start"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex-shrink-0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                         \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "h-6 w-6 text-winter-blue"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M5 13l4 4L19 7"\cf0 \strokec5  \cf6 \strokec6 /></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "ml-3 text-base text-gray-900 font-semibold"\cf6 \strokec6 >\cf0 \strokec5 Power Wash Patio (PW-P)\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 li\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-start"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex-shrink-0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                         \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "h-6 w-6 text-winter-blue"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M5 13l4 4L19 7"\cf0 \strokec5  \cf6 \strokec6 /></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "ml-3 text-base text-gray-900 font-semibold"\cf6 \strokec6 >\cf0 \strokec5 Power Wash Walkway (PW-W)\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 li\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-start"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex-shrink-0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                         \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "h-6 w-6 text-winter-blue"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M5 13l4 4L19 7"\cf0 \strokec5  \cf6 \strokec6 /></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "ml-3 text-base text-gray-600"\cf6 \strokec6 >\cf0 \strokec5 You Save: **$26** Off Individual Low Price\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 </\cf7 \strokec7 ul\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-6"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 a\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "#contact"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "block w-full text-center rounded-xl border border-transparent bg-winter-blue px-6 py-3 text-lg font-medium text-white hover:bg-blue-800"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     Select Sparkle Guard Special\cb1 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-3 text-xs text-gray-500 text-center"\cf6 \strokec6 >\cf0 \strokec5 *Starting price, based on standard sizes.\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 section\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\
+\cb3         \cf9 \strokec9 <!-- About Section -->\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 section\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "about"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "py-16 sm:py-24 bg-gray-50"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "lg:text-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 h2\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-base text-accent-red font-semibold tracking-wide uppercase"\cf6 \strokec6 >\cf0 \strokec5 Who We Are\cf6 \strokec6 </\cf7 \strokec7 h2\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         A Family Team Built on Trust\cb1 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-10 max-w-3xl mx-auto text-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xl text-gray-500 leading-8"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         Hi, we're the team behind Prime Cut & Shine! We love working outdoors and taking pride in a job well done. Since we're cousins, we have a bond that means we hold each other accountable for quality and detail on every project.\cb1 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-6 text-lg text-gray-600 space-y-4"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "font-semibold"\cf6 \strokec6 >\cf0 \strokec5 Our Promise:\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 ul\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "list-none space-y-2"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 li\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-center justify-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "h-5 w-5 text-accent-green mr-2"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 20 20"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 fill-rule\cf6 \strokec6 =\cf8 \strokec8 "evenodd"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"\cf0 \strokec5  \cf4 \strokec4 clip-rule\cf6 \strokec6 =\cf8 \strokec8 "evenodd"\cf0 \strokec5  \cf6 \strokec6 /></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-gray-700"\cf6 \strokec6 >\cf0 \strokec5 Fair, Upfront Pricing\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 </\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 li\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-center justify-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "h-5 w-5 text-accent-green mr-2"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 20 20"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 fill-rule\cf6 \strokec6 =\cf8 \strokec8 "evenodd"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"\cf0 \strokec5  \cf4 \strokec4 clip-rule\cf6 \strokec6 =\cf8 \strokec8 "evenodd"\cf0 \strokec5  \cf6 \strokec6 /></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-gray-700"\cf6 \strokec6 >\cf0 \strokec5 Always On-Time Service\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 </\cf7 \strokec7 li\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 ul\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 section\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\
+\cb3         \cf9 \strokec9 <!-- Contact/Quote Section -->\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 section\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "contact"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "py-16 sm:py-24 bg-gray-800"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "max-w-4xl mx-auto px-4 sm:px-6 lg:px-8"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 h2\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-base text-accent-green font-semibold tracking-wide uppercase"\cf6 \strokec6 >\cf0 \strokec5 Free Estimate\cf6 \strokec6 </\cf7 \strokec7 h2\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         Let's Get Your Project Started\cb1 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-4 text-xl text-gray-300"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         Fill out the form below and we'll get back to you within 24 hours with a custom quote.\cb1 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-12 bg-white p-8 rounded-xl shadow-2xl"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 form\cf0 \strokec5  \cf4 \strokec4 onsubmit\cf6 \strokec6 =\cf8 \strokec8 "handleQuoteRequest(event)"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "grid grid-cols-1 gap-y-6"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 label\cf0 \strokec5  \cf4 \strokec4 for\cf6 \strokec6 =\cf8 \strokec8 "full-name"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "block text-sm font-medium text-gray-700"\cf6 \strokec6 >\cf0 \strokec5 Full Name\cf6 \strokec6 </\cf7 \strokec7 label\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 input\cf0 \strokec5  \cf4 \strokec4 type\cf6 \strokec6 =\cf8 \strokec8 "text"\cf0 \strokec5  \cf4 \strokec4 name\cf6 \strokec6 =\cf8 \strokec8 "full-name"\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "full-name"\cf0 \strokec5  \cf4 \strokec4 required\cf0 \strokec5  \cf4 \strokec4 autocomplete\cf6 \strokec6 =\cf8 \strokec8 "name"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-1 block w-full rounded-xl border-gray-300 shadow-sm py-3 px-4 focus:ring-accent-red focus:border-accent-red border"\cf0 \strokec5  \cf4 \strokec4 placeholder\cf6 \strokec6 =\cf8 \strokec8 "John Doe"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 label\cf0 \strokec5  \cf4 \strokec4 for\cf6 \strokec6 =\cf8 \strokec8 "email"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "block text-sm font-medium text-gray-700"\cf6 \strokec6 >\cf0 \strokec5 Email\cf6 \strokec6 </\cf7 \strokec7 label\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 input\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "email"\cf0 \strokec5  \cf4 \strokec4 name\cf6 \strokec6 =\cf8 \strokec8 "email"\cf0 \strokec5  \cf4 \strokec4 type\cf6 \strokec6 =\cf8 \strokec8 "email"\cf0 \strokec5  \cf4 \strokec4 required\cf0 \strokec5  \cf4 \strokec4 autocomplete\cf6 \strokec6 =\cf8 \strokec8 "email"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-1 block w-full rounded-xl border-gray-300 shadow-sm py-3 px-4 focus:ring-accent-red focus:border-accent-red border"\cf0 \strokec5  \cf4 \strokec4 placeholder\cf6 \strokec6 =\cf8 \strokec8 "you@example.com"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 label\cf0 \strokec5  \cf4 \strokec4 for\cf6 \strokec6 =\cf8 \strokec8 "service-type"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "block text-sm font-medium text-gray-700"\cf6 \strokec6 >\cf0 \strokec5 Service Needed\cf6 \strokec6 </\cf7 \strokec7 label\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 select\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "service-type"\cf0 \strokec5  \cf4 \strokec4 name\cf6 \strokec6 =\cf8 \strokec8 "service-type"\cf0 \strokec5  \cf4 \strokec4 required\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-1 block w-full rounded-xl border-gray-300 shadow-sm py-3 px-4 focus:ring-accent-red focus:border-accent-red border"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 option\cf0 \strokec5  \cf4 \strokec4 value\cf6 \strokec6 =\cf8 \strokec8 ""\cf6 \strokec6 >\cf0 \strokec5 Select a Service\cf6 \strokec6 </\cf7 \strokec7 option\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 option\cf0 \strokec5  \cf4 \strokec4 disabled\cf6 \strokec6 >\cf0 \strokec5 --- Winter Combos ---\cf6 \strokec6 </\cf7 \strokec7 option\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 option\cf0 \strokec5  \cf4 \strokec4 value\cf6 \strokec6 =\cf8 \strokec8 "Winter Guard Combo"\cf6 \strokec6 >\cf0 \strokec5 Combo: Winter Guard Combo ($99)\cf6 \strokec6 </\cf7 \strokec7 option\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 option\cf0 \strokec5  \cf4 \strokec4 disabled\cf6 \strokec6 >\cf0 \strokec5 --- Other Combos ---\cf6 \strokec6 </\cf7 \strokec7 option\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 option\cf0 \strokec5  \cf4 \strokec4 value\cf6 \strokec6 =\cf8 \strokec8 "Sparkle Guard Special"\cf6 \strokec6 >\cf0 \strokec5 Combo: Sparkle Guard Special ($139)\cf6 \strokec6 </\cf7 \strokec7 option\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 option\cf0 \strokec5  \cf4 \strokec4 value\cf6 \strokec6 =\cf8 \strokec8 "Green & Clean Deal"\cf6 \strokec6 >\cf0 \strokec5 Combo: Green & Clean Deal ($89)\cf6 \strokec6 </\cf7 \strokec7 option\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 option\cf0 \strokec5  \cf4 \strokec4 disabled\cf6 \strokec6 >\cf0 \strokec5 --- Seasonal Services ---\cf6 \strokec6 </\cf7 \strokec7 option\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 option\cf0 \strokec5  \cf4 \strokec4 value\cf6 \strokec6 =\cf8 \strokec8 "Snow Shoveling"\cf6 \strokec6 >\cf0 \strokec5 Snow Shoveling (Driveway/Walkway) ($35 - $70)\cf6 \strokec6 </\cf7 \strokec7 option\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 option\cf0 \strokec5  \cf4 \strokec4 value\cf6 \strokec6 =\cf8 \strokec8 "Ice Melt/Salting Application"\cf6 \strokec6 >\cf0 \strokec5 Ice Melt/Salting Application ($25 - $50)\cf6 \strokec6 </\cf7 \strokec7 option\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 option\cf0 \strokec5  \cf4 \strokec4 disabled\cf6 \strokec6 >\cf0 \strokec5 --- Other Single Services ---\cf6 \strokec6 </\cf7 \strokec7 option\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 option\cf0 \strokec5  \cf4 \strokec4 value\cf6 \strokec6 =\cf8 \strokec8 "Brick Siding Soft Wash"\cf6 \strokec6 >\cf0 \strokec5 Brick Siding Soft Wash ($150 - $250)\cf6 \strokec6 </\cf7 \strokec7 option\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 option\cf0 \strokec5  \cf4 \strokec4 value\cf6 \strokec6 =\cf8 \strokec8 "Lawn Mowing"\cf6 \strokec6 >\cf0 \strokec5 Lawn Mowing (One-Time) ($40 - $60)\cf6 \strokec6 </\cf7 \strokec7 option\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 option\cf0 \strokec5  \cf4 \strokec4 value\cf6 \strokec6 =\cf8 \strokec8 "Yard Cleanup"\cf6 \strokec6 >\cf0 \strokec5 Leaf/Yard Cleanup ($60 - $120)\cf6 \strokec6 </\cf7 \strokec7 option\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 option\cf0 \strokec5  \cf4 \strokec4 value\cf6 \strokec6 =\cf8 \strokec8 "Power Wash Driveway"\cf6 \strokec6 >\cf0 \strokec5 Power Wash Driveway ($75 - $120)\cf6 \strokec6 </\cf7 \strokec7 option\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 option\cf0 \strokec5  \cf4 \strokec4 value\cf6 \strokec6 =\cf8 \strokec8 "Power Wash Patio"\cf6 \strokec6 >\cf0 \strokec5 Power Wash Patio ($50 - $90)\cf6 \strokec6 </\cf7 \strokec7 option\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 option\cf0 \strokec5  \cf4 \strokec4 value\cf6 \strokec6 =\cf8 \strokec8 "Power Wash Walkway"\cf6 \strokec6 >\cf0 \strokec5 Power Wash Walkway ($40 - $80)\cf6 \strokec6 </\cf7 \strokec7 option\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 </\cf7 \strokec7 select\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 label\cf0 \strokec5  \cf4 \strokec4 for\cf6 \strokec6 =\cf8 \strokec8 "message"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "block text-sm font-medium text-gray-700"\cf6 \strokec6 >\cf0 \strokec5 Project Details (Address and scope of work)\cf6 \strokec6 </\cf7 \strokec7 label\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 textarea\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "message"\cf0 \strokec5  \cf4 \strokec4 name\cf6 \strokec6 =\cf8 \strokec8 "message"\cf0 \strokec5  \cf4 \strokec4 rows\cf6 \strokec6 =\cf8 \strokec8 "4"\cf0 \strokec5  \cf4 \strokec4 required\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-1 block w-full rounded-xl border-gray-300 shadow-sm py-3 px-4 focus:ring-accent-red focus:border-accent-red border"\cf0 \strokec5  \cf4 \strokec4 placeholder\cf6 \strokec6 =\cf8 \strokec8 "Please describe the area and what you need done."\cf6 \strokec6 ></\cf7 \strokec7 textarea\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-center justify-between"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 type\cf6 \strokec6 =\cf8 \strokec8 "submit"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-xl shadow-sm text-white bg-accent-red hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-red transition duration-150"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 Send Quote Request\cb1 \
+\cb3                             \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                         \cf9 \strokec9 <!-- Success Message -->\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "success-message"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "hidden mt-4 p-4 rounded-xl bg-green-100 text-green-800 font-medium text-center"\cf0 \strokec5  \cf4 \strokec4 role\cf6 \strokec6 =\cf8 \strokec8 "alert"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             Thank you! Your quote request has been sent. We will contact you soon!\cb1 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 form\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 section\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 main\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3     \cf9 \strokec9 <!-- Footer -->\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 footer\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "bg-gray-900"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "max-w-7xl mx-auto py-8 px-4 overflow-hidden sm:px-6 lg:px-8"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cb1 \
+\cb3             \cf9 \strokec9 <!-- Contact Info -->\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-8 mb-6"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf9 \strokec9 <!-- Phone Link -->\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 a\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "tel:+15166807958"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-lg font-medium text-white hover:text-accent-red transition duration-150 flex items-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-5 h-5 mr-2 text-accent-green"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 20 20"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 3.483a1 1 0 01-.11 1.056l-1.57 1.57a11.026 11.026 0 005.122 5.122l1.57-1.57a1 1 0 011.056-.11l3.483.74A1 1 0 0118 16.847V17a1 1 0 01-1 1H3a1 1 0 01-1-1V3z"\cf0 \strokec5  \cf6 \strokec6 /></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     +1 (516) 680-7958\cb1 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cb1 \
+\cb3                 \cf9 \strokec9 <!-- Email Link -->\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 a\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "mailto:cousinscleancoo@gmail.com"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-lg font-medium text-white hover:text-accent-red transition duration-150 flex items-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-5 h-5 mr-2 text-accent-green"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 20 20"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"\cf6 \strokec6 /><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"\cf6 \strokec6 /></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     cousinscleancoo@gmail.com\cb1 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3             \cf9 \strokec9 <!-- Copyright -->\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-center text-base text-gray-400 border-t border-gray-700 pt-6 mt-6"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 &copy; 2025 Cousins Clean Co. All rights reserved. Happy Holidays!\cb1 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 footer\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3     \cf9 \strokec9 <!-- JavaScript for interactivity -->\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 // 1. Mobile Menu Toggle\cf0 \cb1 \strokec5 \
+\cb3         document.getElementById(\cf11 \strokec11 'mobile-menu-button'\cf0 \strokec5 ).addEventListener(\cf11 \strokec11 'click'\cf0 \strokec5 , () => \{\cb1 \
+\cb3             \cf13 \strokec13 const\cf0 \strokec5  menu = document.getElementById(\cf11 \strokec11 'mobile-menu'\cf0 \strokec5 );\cb1 \
+\cb3             \cf13 \strokec13 const\cf0 \strokec5  isExpanded = menu.classList.contains(\cf11 \strokec11 'hidden'\cf0 \strokec5 );\cb1 \
+\cb3             \cf13 \strokec13 if\cf0 \strokec5  (isExpanded) \{\cb1 \
+\cb3                 menu.classList.remove(\cf11 \strokec11 'hidden'\cf0 \strokec5 );\cb1 \
+\cb3             \} \cf13 \strokec13 else\cf0 \strokec5  \{\cb1 \
+\cb3                 menu.classList.add(\cf11 \strokec11 'hidden'\cf0 \strokec5 );\cb1 \
+\cb3             \}\cb1 \
+\cb3         \});\cb1 \
+\
+\cb3         \cf9 \strokec9 // Close mobile menu when a link is clicked\cf0 \cb1 \strokec5 \
+\cb3         document.querySelectorAll(\cf11 \strokec11 '#mobile-menu a'\cf0 \strokec5 ).forEach(link => \{\cb1 \
+\cb3             link.addEventListener(\cf11 \strokec11 'click'\cf0 \strokec5 , () => \{\cb1 \
+\cb3                 document.getElementById(\cf11 \strokec11 'mobile-menu'\cf0 \strokec5 ).classList.add(\cf11 \strokec11 'hidden'\cf0 \strokec5 );\cb1 \
+\cb3             \});\cb1 \
+\cb3         \});\cb1 \
+\
+\cb3         \cf9 \strokec9 // 2. Quote Request Form Handler (Client-side simulation)\cf0 \cb1 \strokec5 \
+\cb3         \cf13 \strokec13 function\cf0 \strokec5  handleQuoteRequest(event) \{\cb1 \
+\cb3             event.preventDefault(); \cf9 \strokec9 // Stop the default form submission\cf0 \cb1 \strokec5 \
+\
+\cb3             \cf13 \strokec13 const\cf0 \strokec5  name = document.getElementById(\cf11 \strokec11 'full-name'\cf0 \strokec5 ).value;\cb1 \
+\cb3             \cf13 \strokec13 const\cf0 \strokec5  email = document.getElementById(\cf11 \strokec11 'email'\cf0 \strokec5 ).value;\cb1 \
+\cb3             \cf13 \strokec13 const\cf0 \strokec5  service = document.getElementById(\cf11 \strokec11 'service-type'\cf0 \strokec5 ).value;\cb1 \
+\cb3             \cf13 \strokec13 const\cf0 \strokec5  message = document.getElementById(\cf11 \strokec11 'message'\cf0 \strokec5 ).value;\cb1 \
+\
+\cb3             console.log(\cf11 \strokec11 "--- New Quote Request ---"\cf0 \strokec5 );\cb1 \
+\cb3             console.log(\cf11 \strokec11 `Name: \cf0 \strokec5 $\{name\}\cf11 \strokec11 `\cf0 \strokec5 );\cb1 \
+\cb3             console.log(\cf11 \strokec11 `Email: \cf0 \strokec5 $\{email\}\cf11 \strokec11 `\cf0 \strokec5 );\cb1 \
+\cb3             console.log(\cf11 \strokec11 `Service: \cf0 \strokec5 $\{service\}\cf11 \strokec11 `\cf0 \strokec5 );\cb1 \
+\cb3             console.log(\cf11 \strokec11 `Details: \cf0 \strokec5 $\{message\}\cf11 \strokec11 `\cf0 \strokec5 );\cb1 \
+\cb3             console.log(\cf11 \strokec11 "--------------------------"\cf0 \strokec5 );\cb1 \
+\
+\cb3             \cf9 \strokec9 // Show success message\cf0 \cb1 \strokec5 \
+\cb3             \cf13 \strokec13 const\cf0 \strokec5  successBox = document.getElementById(\cf11 \strokec11 'success-message'\cf0 \strokec5 );\cb1 \
+\cb3             successBox.classList.remove(\cf11 \strokec11 'hidden'\cf0 \strokec5 );\cb1 \
+\
+\cb3             \cf9 \strokec9 // Optionally, clear the form\cf0 \cb1 \strokec5 \
+\cb3             event.target.reset();\cb1 \
+\
+\cb3             \cf9 \strokec9 // Hide the success message after 5 seconds\cf0 \cb1 \strokec5 \
+\cb3             setTimeout(() => \{\cb1 \
+\cb3                 successBox.classList.add(\cf11 \strokec11 'hidden'\cf0 \strokec5 );\cb1 \
+\cb3             \}, \cf14 \strokec14 5000\cf0 \strokec5 );\cb1 \
+\cb3         \}\cb1 \
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 </\cf7 \strokec7 body\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 </\cf7 \strokec7 html\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+}
